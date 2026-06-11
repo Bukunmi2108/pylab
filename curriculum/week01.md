@@ -95,7 +95,7 @@ plus your probe script's two memory-sharing demonstrations print the expected co
 **If stuck:** "Advanced indexing" in the NumPy doc above; `torch.Tensor.data_ptr` docs for the storage probe.
 
 ## Day 1.3 — Broadcasting (~2h)
-- [ ] done
+- [x] done
 **Goal:** compute the broadcast shape of any two tensors mentally, and exploit broadcasting to replace loops.
 **Learn:**
 - *The two rules* — align shapes at the RIGHT edge; (1) a missing dim is treated as size 1; (2) two dims are compatible iff equal or either is 1. The result dim is the max of the pair. Anything else raises.
