@@ -1,0 +1,13 @@
+[project]
+name = "pylab"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.9",
+    "numpy>=2.4.6",
+    "pytest>=9.0.3",
+    "torch>=2.12.0",
+]
