@@ -13,7 +13,7 @@ Conventions for the whole program:
 - When a check fails, print `actual.shape`, `actual.dtype`, and the first few elements before reaching for the debugger — most Week 1 bugs are shape or dtype, not values.
 
 ## Day 1.1 — Tensor creation & dtypes (~2h)
-- [ ] done
+- [x] done
 **Goal:** create tensors of any shape/dtype/device deliberately, and know which constructors copy memory and which share it.
 **Learn:**
 - *Factory functions* — `torch.zeros/ones/full/eye/arange/linspace/rand/randn/randint/empty` each take a shape (or range) plus `dtype=` and `device=` kwargs. `empty` allocates without initializing: its contents are whatever bytes were in memory, so never read it before writing.
@@ -55,7 +55,7 @@ assert torch.result_type(torch.empty(1, dtype=torch.int64), torch.empty(1, dtype
 **If stuck:** the promotion subsection of https://docs.pytorch.org/docs/stable/tensor_attributes.html; the `torch.from_numpy` doc (https://docs.pytorch.org/docs/stable/generated/torch.from_numpy.html) states the sharing behavior explicitly.
 
 ## Day 1.2 — Indexing & slicing (~2h)
-- [ ] done
+- [x] done
 **Goal:** select any sub-tensor without writing a Python loop, and know whether the result shares memory with the source.
 **Learn:**
 - *Basic slicing returns views* — `t[1:4]`, `t[:, ::2]`, `t[..., -1]` create no new data; they reinterpret the same storage. Mutating the slice mutates the original.
