@@ -168,7 +168,7 @@ You will reuse `stable_log_softmax` and `cross_entropy_from_scratch` verbatim in
 **If stuck:** the `torch.logsumexp` doc page states the identity; check `keepdim=True` on every intermediate reduction — a missing keepdim mis-broadcasts silently.
 
 ## Day 1.5 — Shape surgery (~2h)
-- [ ] done
+- [x] done
 **Goal:** move data between layouts (batch/channel/spatial) with reshape/permute and know which ops copy.
 **Learn:**
 - *`reshape` vs `view`* — both reinterpret the same elements in row-major order; `view` demands a compatible memory layout and errors otherwise, `reshape` silently copies when it must. `-1` infers one dimension.
