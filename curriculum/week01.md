@@ -207,7 +207,7 @@ assert broadcast_row(torch.arange(3.), 4).stride(0) == 0
 **If stuck:** print a `torch.arange(24).reshape(2, 3, 4)` before/after each op and find specific elements; the `view` doc's contiguity paragraph explains the `merge_heads` error you'll hit.
 
 ## Day 1.6 — Deep build: tensor toolbox (~3.5h)
-- [ ] done
+- [x] done
 **Goal:** combine the whole week into a tested toolbox, culminating in a loop-free kNN classifier.
 **Learn:**
 - *Vectorization discipline* — every function gets two implementations: a naive loop reference (allowed today only, in the test file) and the tensor version. Agreement via `allclose` is the proof.
