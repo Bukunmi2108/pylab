@@ -128,7 +128,7 @@ and the 200-iteration randomized agreement test passes.
 **If stuck:** re-read the worked examples at the bottom of the PyTorch broadcasting note; for `pairwise_diff`, write the target indices `out[i, j, k] = a[i, k] - b[j, k]` and add `None` where an operand lacks an index.
 
 ## Day 1.4 — Reductions & numerical stability (~2.5h)
-- [ ] done
+- [x] done
 **Goal:** reduce along chosen dims fluently and implement softmax/cross-entropy that survive extreme logits.
 **Learn:**
 - *`dim` and `keepdim`* — `x.sum(dim=1)` collapses dim 1 away; `keepdim=True` leaves it as size 1 so the result broadcasts back against `x` (essential for "subtract the row max" patterns).
